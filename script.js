@@ -51,24 +51,21 @@ function writePassword() {
       if (UC == true) {
         selectedCharacters = selectedCharacters.concat(upperCasedCharacters);
         console.log("sanity UC")
-
       }
 
       if (N == true) {
         selectedCharacters = selectedCharacters.concat(numericCharacters);
         console.log("sanity N")
-
       }
 
       if (SC == true) {
         selectedCharacters = selectedCharacters.concat(specialCharacters);
         console.log("sanity SC")
-
       }
 
       console.log(selectedCharacters);
-      selectedCharacters = selectedCharacters.join("")
 
+      selectedCharacters = selectedCharacters.join("")
       var password = generatePassword(passwordLength);
       var passwordText = document.querySelector("#password");
     
@@ -87,7 +84,6 @@ function writePassword() {
     alert("Please enter a value between 8 and 128");
   }
 
-
 }
 
 
@@ -95,21 +91,3 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-
-
-// $(document).ready(function () {
-
-//   $("#generate").on("click", function () {
-
-//     function generatePassword(length) {
-//       var result = '';
-//       var characters = selectedCharacters;
-//       var charactersLength = characters.length;
-//       for (var i = 0; i < length; i++) {
-//         result += characters.charAt(Math.floor(Math.random() * charactersLength));
-//       }
-//       console.log(result);
-//       return result;
-//     }
-//   }
-// }
