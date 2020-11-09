@@ -24,6 +24,7 @@ function generatePassword(length) {
 
 // Write password to the #password input
 function writePassword() {
+  selectedCharacters = [];
 
   //prompt for password length
   var passwordLength = prompt("Select a password length between 8 and 128");
