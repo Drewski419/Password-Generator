@@ -42,26 +42,21 @@ function writePassword() {
 
     //code to make sure a character is selected
     if (LC == true || UC == true || N == true || SC == true) {
-      console.log("sanity check")
 
       if (LC == true) {
         selectedCharacters = selectedCharacters.concat(lowerCasedCharacters);
-        console.log("sanity LC")
       }
 
       if (UC == true) {
         selectedCharacters = selectedCharacters.concat(upperCasedCharacters);
-        console.log("sanity UC")
       }
 
       if (N == true) {
         selectedCharacters = selectedCharacters.concat(numericCharacters);
-        console.log("sanity N")
       }
 
       if (SC == true) {
         selectedCharacters = selectedCharacters.concat(specialCharacters);
-        console.log("sanity SC")
       }
 
       console.log(selectedCharacters);
